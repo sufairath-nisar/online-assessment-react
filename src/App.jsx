@@ -11,7 +11,7 @@ const App = () => {
     const fetchAllProducts = async () => {
       try {
         const response = await axios.get('https://dummyjson.com/products');
-        setProducts(response.data.products); // Assuming the response data has a 'products' key
+        setProducts(response.data.products); 
       } catch (error) {
         console.error('Error fetching all products:', error);
         setError(error);
